@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecell registration form</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta
+      name="description"
+      content="Register here to enroll into our 2024 induction program"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: url(https://png.pngtree.com/back_origin_pic/04/42/02/b4b26012df4f295cf11613cffab1118e.jpg);
+        background-size:cover;
+      }
+
+      .main {
+        max-width: 800px;
+        margin: 20px auto;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      }
+
+      .register {
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      }
+
+      fieldset {
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0.625rem 0.625rem 0.625rem rgba(51, 49, 47, 0.6)
+      }
+
+      legend {
+        font-weight: bold;
+        color: #e3e5dd;
+        text-align: center;
+        
+      }
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+        color: #ddd;
+      }
+
+      input[type="text"],
+      textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+
+      input[type="checkbox"] {
+        margin-right: 10px;
+      }
+
+      .help {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      button:hover {
+        background-color: #232d37;
+      }
+      .help a {
+        display: inline-block;
+        margin: 0 10px;
+      }
+      .help input {
+        font-size: 1.2rem;
+        border-radius: 4px;
+        text-decoration: none;
+      }
+      /* Keyframes for the animation */
+      @keyframes slideIn {
+        0% {
+          transform: translateY(-100%);
+          opacity: 0;
+        }
+        100% {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+
+      /* Apply the animation to the form */
+      .register {
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        animation: slideIn 2s ease-in-out;
+      }
+
+      /* Responsive styles */
+      @media screen and (max-width: 600px) {
+        .main {
+          max-width: 100%;
+          padding: 10px;
+        }
+
+        .register {
+          padding: 10px;
+        }
+
+        fieldset {
+          padding: 10px;
+        }
+
+        input[type="text"],
+        textarea {
+          padding: 8px;
+        }
+
+        button {
+          padding: 8px 16px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="register">
+        <fieldset class="portal">
+          <legend class="form" style="color: #232d37;">REGISTER HERE</legend>
+          <form>
+            <!-- Part 1: Personal Information -->
+            <fieldset class="part1">
+              <legend >Fill in the details.</legend>
+              <label for="name1">First Name:</label>
+              <input
+                type="text"
+                id="name1"
+                placeholder="Enter your first name"
+              />
+              <br /><br />
+              <label for="name2">Second Name:</label>
+              <input
+                type="text"
+                id="name2"
+                placeholder="Enter your second name"
+              />
+              <br /><br />
+              <label for="roll">Roll Number:</label>
+              <input
+                type="text"
+                id="roll"
+                placeholder="Enter your roll number"
+              />
+              <br /><br />
+              <label for="branch">Branch name:</label>
+              <input
+                type="text"
+                id="branch"
+                placeholder="Enter your branch name"
+              />
+              <br /><br />
+              <label for="mail">Mail Id:</label>
+              <input type="text" id="mail" placeholder="Enter your mail ID" />
+              <br /><br />
+              <label for="passout">Year of passing:</label>
+              <input
+                type="text"
+                id="passout"
+                placeholder="Enter year of passing"
+              />
+            </fieldset>
+
+            <!-- Part 2: Domain Selection -->
+            <fieldset class="part2">
+              <legend style="text-align: center;">Select the domains you are interested in:</legend>
+              <label for="interest1">Tech</label>
+              <input type="checkbox" name="interest1" id="interest1" />
+              &nbsp;&nbsp;&nbsp;
+              <label for="interest2">Marketing and Sponsorship</label>
+              <input type="checkbox" name="interest2" id="interest2" />
+              &nbsp;&nbsp;&nbsp;
+              <label for="interest3">Graphic Designing</label>
+              <input type="checkbox" name="interest3" id="interest3" />
+              <br /><br />
+              <label for="interest4">Social Media</label>
+              <input type="checkbox" name="interest4" id="interest4" />
+              &nbsp;&nbsp;&nbsp;
+              <label for="interest5">Event Management</label>
+              <input type="checkbox" name="interest5" id="interest5" />
+              &nbsp;&nbsp;&nbsp;
+              <label for="interest6">Public Relations</label>
+              <input type="checkbox" name="interest6" id="interest6" />
+              <br /><br />
+              <label for="interest7">Video Editing</label>
+              <input type="checkbox" name="interest7" id="interest7" />
+            </fieldset>
+
+            <!-- Part 3: Links to WhatsApp Groups -->
+            <fieldset class="part3">
+              <legend style="text-align: center;">Links to join respective WhatsApp groups</legend>
+              <nav>
+                <ul>
+                  <li><a href="http://www.google.com" style="color: rgb(168, 118, 47);">Tech</a></li>
+                  <li>
+                    <a href="http://www.google.com"
+                    style="color: rgb(168, 118, 47);">Marketing and Sponsorship</a
+                    >
+                  </li>
+                  <li><a href="http://www.google.com" style="color: rgb(168, 118, 47);">Graphic Designing</a></li>
+                  <li><a href="http://www.google.com" style="color: rgb(168, 118, 47);">Social Media</a></li>
+                  <li><a href="http://www.google.com" style="color: rgb(168, 118, 47);">Event Management</a></li>
+                  <li><a href="http://www.google.com"  style="color: rgb(168, 118, 47);">Public Relations</a></li>
+                  <li><a href="http://www.google.com"  style="color: rgb(168, 118, 47);">Video Editing</a></li>
+                </ul>
+              </nav>
+            </fieldset>
+
+            <!-- Part 4: Previous Experience -->
+            <fieldset class="part4">
+              <legend>
+                Any Previous experience in the selected domain(s):
+              </legend>
+              <textarea
+                id="suggestions"
+                cols="50"
+                rows="5"
+                placeholder="Enter your experience here"
+              ></textarea>
+            </fieldset>
+
+            <!-- Help and About links -->
+            <div class="help">
+              <a href="http://www.google.com" class="side">Help</a>
+              <a
+                href="http://in.search.yahoo.com/search?fr=mcafee&type=E210IN885G0&p=ecell+vssut"
+                >About ECELL</a
+              >
+              <input type="button" value="SUBMIT" />
+            </div>
+          </form>
+        </fieldset>
+      </div>
+    </div>
+  </body>
+</html>
